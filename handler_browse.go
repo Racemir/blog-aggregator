@@ -27,7 +27,7 @@ func handlerBrowse(s *state, cmd command, user database.User) error {
 	}
 
 	for _, post := range posts {
-		fmt.Printf("%s - %s (%s)\n", post.FeedsName, post.Title, post.Url)
+		fmt.Printf("%s - %s (%s)\n", post.FeedsName, post.Title.String, post.Url.String)
 	}
 
 	return nil
